@@ -13,7 +13,7 @@ def send_notification(email_msg):
         smtp.ehlo()
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         message = f"Subject: SITE DOWN\n{email_msg}"
-        smtp.sendmail(EMAIL_ADDRESS, "devopsmarv@gmail.com", message)
+        smtp.sendmail(EMAIL_ADDRESS, EMAIL_ADDRESS, message)
 
 
 try:
