@@ -16,4 +16,3 @@ for volume in volumes['Volumes']:
         VolumeId=volume['VolumeId']
     )
     print(new_snapshot)
-
